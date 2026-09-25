@@ -46,10 +46,10 @@ export default function Blueprint() {
             {LINKS.map(([a, b], i) => (
               <motion.line
                 key={i}
-                x1={NODES[a].x}
-                y1={NODES[a].y}
-                x2={NODES[b].x}
-                y2={NODES[b].y}
+                x1={NODES[a]!.x}
+                y1={NODES[a]!.y}
+                x2={NODES[b]!.x}
+                y2={NODES[b]!.y}
                 stroke="color-mix(in oklab, var(--primary) 45%, transparent)"
                 strokeWidth="0.18"
                 vectorEffect="non-scaling-stroke"

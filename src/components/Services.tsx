@@ -91,7 +91,7 @@ const SERVICES: Service[] = [
 
 export default function Services() {
   const [active, setActive] = useState(0);
-  const current = SERVICES[active] ?? SERVICES[0];
+  const current = (SERVICES[active] ?? SERVICES[0])!;
   const Icon = current.icon;
 
   return (

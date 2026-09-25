@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 type Common = {
   children: ReactNode;
   className?: string;
-  href?: string;
-  onClick?: () => void;
+  href?: string | undefined;
+  onClick?: (() => void) | undefined;
 };
 
 function Base({
